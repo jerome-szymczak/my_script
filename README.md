@@ -1,2 +1,2 @@
-# my_script
+# my_scripts
 Compilation de scripts
