@@ -53,16 +53,6 @@ sleep 2
 
 yum install -y epel-release.noarch
 
-# Installation des mises a jour
-clear
-echo "#"
-echo "## Installation des mises a jour"
-echo "#"
-echo ""
-
-sleep 2
-
-yum update -y
 
 # Installation des outils utiles
 clear
@@ -128,3 +118,26 @@ sleep 2
 rpm --import https://packagecloud.io/AtomEditor/atom/gpgkey
 sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/AtomEditor/atom/el/7/\$basearch\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/AtomEditor/atom/gpgkey" > /etc/yum.repos.d/atom.repo'
 yum install -y atom
+
+# Installation des mises a jour
+clear
+echo "#"
+echo "## Installation des mises a jour"
+echo "#"
+echo ""
+
+sleep 2
+
+yum update -y
+
+
+# reboot de la machine
+clear
+echo "#"
+echo "## Redémarrage de la machine"
+echo "#"
+echo ""
+
+sleep 2
+
+shutdown -r now
