@@ -30,6 +30,8 @@ echo "## Création de l'utilisateur : jerome"
 echo "#"
 echo ""
 
+sleep 2
+
 if !(getent passwd jerome)
 then
 	adduser jerome
